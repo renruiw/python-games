@@ -1,0 +1,26 @@
+import pygame
+
+FPS = 60
+WHITE = (255,255,255)
+WIDTH = 500
+HEIGHT = 600
+#游戏初始化 and 创建窗口
+pygame.init()
+screen = pygame.display.set_mode((WIDTH,HEIGHT))
+clock = pygame.time.Clock()
+
+running =True
+
+#游戏巡回
+while running:
+  clock.tick(FPS)
+  #取得输入
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      running = False
+  #更新游戏
+  
+  #界面显示
+  screen.fill((WHITE))
+  pygame.display.update()
+pygame.quit()
