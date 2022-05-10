@@ -73,7 +73,7 @@ class Rock(pygame.sprite.Sprite):
     self.image_ori.set_colorkey(BLACK)
     self.image = self.image_ori.copy
     
-   self.rect = self.image.get_rect()
+    self.rect = self.image.get_rect()
     self.radius = self.rect.width *0.85/ 2
     #pygame.draw.circle(self.image.RED.self.rect.center,self.radius)
     self.tect.x = random.randrange(0,WIDTH - self.rect.width)
